@@ -5,7 +5,7 @@ import {adduser, getuser} from '../Controller/UserController.js'
 export const router = express.Router()
 
 router.get('/', (req, res) => {
-    res.send('Hey Sushrut Pandey how are you!')
+    res.send('Hey good morning frahan sir!')
 })
 
 router.post('/adduser',adduser);
