@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 
-const port = 7070;
+const port = process.env.NODE_ENV === 'production' ? 8080 : 7070;
 
 app.use('/', router);
 
